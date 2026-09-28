@@ -1,0 +1,19 @@
+{
+  "duration_ms": 500.0,
+  "dt_ms": 0.025,
+  "warmup_ms": 100.0,
+  "synaptic_scale": 1.0,
+  "ou_noise_fraction": 0.0,
+  "ou_tau_ms": 5.0,
+  "ou_mean_low": 0.0,
+  "ou_mean_high": 0.0,
+  "release_mode": "binomial",
+  "external_event_package": null,
+  "compound_mode": "theta",
+  "compound_rate_hz": 0.4,
+  "theta_hz": 8.0,
+  "compound_scale": 0.044,
+  "lfp_dt_ms": 0.1,
+  "output_dir": "outputs/full_39112_default"
+}
+

@@ -1,0 +1,9 @@
+build/
+outputs/
+data/full/
+data/*.lock.json
+__pycache__/
+*.pyc
+*.o
+*.log
+

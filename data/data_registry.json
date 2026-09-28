@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "release": "full-runtime-v1",
+  "model": {
+    "cells": 39112,
+    "compartments": 15118188,
+    "cell_types": 12,
+    "edges": 691641,
+    "synapses": 2877810,
+    "electrodes": 210,
+    "electrical_resolution_um": 60
+  },
+  "packages": {
+    "electrical_morphology": {
+      "install_dir": "data/full/electrical_morphology",
+      "local_source": "mouse_ca1_cellwise_emodel_assignment/outputs/full_gpu_baseclone_sparse60_v1",
+      "remote_url": null,
+      "approximate_size": "1.4 GB",
+      "required_files": {
+        "cell_offsets_u64.bin": 312904,
+        "ais_local_i32.bin": 156448,
+        "area_f32.bin": 60472752,
+        "gax_f32.bin": 60472752,
+        "rheobase_reference_f32.bin": 156448,
+        "params_19f32.bin": 1148982288,
+        "export_report.json": 656
+      }
+    },
+    "recurrent_synapses": {
+      "install_dir": "data/full/recurrent_synapses",
+      "local_source": "mouse_ca1_cellwise_emodel_assignment/outputs/full_gpu_baseclone_sparse60_synaptic_inputs_ecker2020_v1",
+      "remote_url": null,
+      "approximate_size": "122 MB",
+      "required_files": {
+        "parent_global_i32.bin": 60472752,
+        "edge_pre_i32.bin": 2766564,
+        "edge_delay_steps_u16.bin": 1383282,
+        "edge_model_u8.bin": 691641,
+        "edge_nrrp_u8.bin": 691641,
+        "edge_nmda_slow_u8.bin": 691641,
+        "edge_g_peak_nS_f32.bin": 2766564,
+        "edge_use_f32.bin": 2766564,
+        "edge_depression_ms_f32.bin": 2766564,
+        "edge_facilitation_ms_f32.bin": 2766564,
+        "edge_nmda_ratio_f32.bin": 2766564,
+        "solver_kinetics_f32.bin": 28,
+        "edge_synapse_prefix_u64.bin": 5533136,
+        "synapse_post_compartment_u64.bin": 23022480,
+        "synaptic_gpu_input_report.json": 1252
+      }
+    },
+    "schaffer_input": {
+      "install_dir": "data/full/schaffer_input",
+      "local_source": "mouse_ca1_schaffer_input/outputs/sc_compound_sites_biological_sparse60_v1",
+      "remote_url": null,
+      "approximate_size": "2.8 MB",
+      "required_files": {
+        "site_target_compartment_u64.bin": 1251584,
+        "site_contact_count_u32.bin": 625792,
+        "site_class_u8.bin": 156448,
+        "trace_cells_i32.bin": 16,
+        "compound_site_report.json": 1027
+      }
+    },
+    "line_leadfield": {
+      "install_dir": "data/full/line_leadfield",
+      "local_source": "mouse_ca1_schaffer_input/outputs/curved_flat_3d_gain_geometry_sparse60_line_v1",
+      "remote_url": null,
+      "approximate_size": "12 GB",
+      "required_files": {
+        "leadfield_line_uV_per_nA_f32.bin": 12699277920,
+        "compartment_mtype_u8.bin": 15118188,
+        "compartment_layer_u8.bin": 15118188,
+        "electrodes.tsv": 27571,
+        "line_leadfield_report.json": 751
+      }
+    }
+  }
+}
+

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use DigitalMouseCA1, please cite this software and its source datasets."
+type: software
+title: "DigitalMouseCA1: a geometry-aware full-cable mouse CA1 network model"
+version: 0.1.0
+date-released: 2026-09-28
+authors:
+  - family-names: "Lee"
+    given-names: "Dongmyeong"
+license: BSD-3-Clause
+repository-code: "https://github.com/DongmyeongL/DigitalMouseCA1"
